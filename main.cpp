@@ -1,6 +1,5 @@
 #include "tasks_rk1.h"
 #include <iostream>
-#include <Windows.h>
 #include <string>
 #include <vector>
 
@@ -55,9 +54,6 @@ void test_egor(){
 }
 
 int main() {
-
-    setlocale(LC_ALL, "rus");
-    SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 2);
 
 
     task_1();
