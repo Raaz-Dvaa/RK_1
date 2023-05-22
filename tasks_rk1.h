@@ -17,7 +17,7 @@ private:
     void prepareTestFile(const char *filename);
 
 public:
-    WorkWithFile(const char *filename);
+    WorkWithFile();
 
     ~WorkWithFile();
 
@@ -28,7 +28,7 @@ char* convertDecToBin(int number);
 char* convertBinToHex(const char* binNum);
 void writeToFile(const char* filename, const char* strNum);
 void randFill(float* a,int size);
-std::vector<std::pair<int, float>> averStr2DArray(float* ar, int colCount, int rowCount);
+std::vector<std::pair<int, float>> averStr2DArray(const float* ar, int colCount, int rowCount);
 struct Node{
     Node* next;
     Node* prev;

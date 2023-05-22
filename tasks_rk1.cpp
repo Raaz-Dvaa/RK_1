@@ -22,9 +22,9 @@ void WorkWithFile::prepareTestFile(const char *filename) {
     fprintf(res, "%s", vvod);
     fclose(res);
 }
-WorkWithFile::WorkWithFile(const char *fileName) {
-    prepareTestFile(fileName);
-    readFromFile(fileName);
+WorkWithFile::WorkWithFile() {
+    prepareTestFile("sourceFile_task1.txt");
+    readFromFile("sourceFile_task1.txt");
 }
 
 WorkWithFile::~WorkWithFile() {
@@ -158,9 +158,9 @@ void randFill(float* a,int size){
         a[i] = std::rand();
     }
 }
-std::vector<std::pair<int, float>> averStr2DArray(float* ar, int colCount, int rowCount){
+std::vector<std::pair<int, float>> averStr2DArray(const float* ar, int colCount, int rowCount){
     int size = colCount * rowCount;
-    randFill(ar, size);
+    //randFill(ar, size);
     std::vector<std::pair<int, float>> out;
     for (int i = 0; i < rowCount; i++){
         float sum = 0;

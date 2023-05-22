@@ -6,7 +6,7 @@
 
 
 void task_1(){
-    WorkWithFile a("sourceFile_task1.txt");
+    WorkWithFile a;
     a.writeStatInfoToFile("result_sourceFile_task1.txt");
 }
 
